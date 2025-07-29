@@ -1,6 +1,7 @@
 # ############################################################################
-# git adhttps://github.com/corso-giugno-talentform/francesco_scarfato_20250729_clone_validation_email
+# **git adhttps://github.com/corso-giugno-talentform/francesco_scarfato_20250729_clone_validation_email**
 # ############################################################################
+
 
 Testiamo il clone di un progetto da github, ricreiamo le librerie mancati,
 generiamo un nuovo .env e rifacciamo setup delle variabili di ambiente.
@@ -34,8 +35,7 @@ composer run dev
 Per verificare che sia tutto correttamente funzionante
 
 # ############################################################################
-# Esercizio
-# ############################################################################
+# **Esercizio**
 
 Andiamo su EmailTrap e creiamo un account per la sandbox in maniera tale da catturare tutte le email invece di inviarle agli indirizzi reali.
 
