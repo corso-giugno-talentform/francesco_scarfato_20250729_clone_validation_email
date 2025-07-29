@@ -1,7 +1,6 @@
 # ############################################################################
-# Nome repo
+# git adhttps://github.com/corso-giugno-talentform/francesco_scarfato_20250729_clone_validation_email
 # ############################################################################
-https://github.com/corso-giugno-talentform/francesco_scarfato_20250729_clone_validation_email
 
 Testiamo il clone di un progetto da github, ricreiamo le librerie mancati,
 generiamo un nuovo .env e rifacciamo setup delle variabili di ambiente.
