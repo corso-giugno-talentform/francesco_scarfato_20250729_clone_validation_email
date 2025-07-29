@@ -6,6 +6,7 @@ use App\Mail\SendAdminMail;
 use App\Mail\SendMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redirect;
 
 class BlogController extends Controller
 {
@@ -45,12 +46,14 @@ class BlogController extends Controller
         Mail::to($request->email)->send(new SendMail($data));
         Mail::to('puppetsprite@gmail.com')->send(new SendAdminMail($data));
 
-        dd(
-            $data,              // sono i dati estrapolati
-            $request->all(),    // ritorna tutti i dati del post
-            $request,            // ritorna tutti i campi della Request
-            'Emails inviate'
-        );
+        // Diamo un feedback all'utente 
+        return Redirect::back()->with('success', 'Grazie per averci contattato. Riceverai una email al più presto.');
 
+        // dd(
+        //     $data,              // sono i dati estrapolati
+        //     $request->all(),    // ritorna tutti i dati del post
+        //     $request,           // ritorna tutti i campi della Request
+        //     'Emails inviate'
+        // );
     }
 }
